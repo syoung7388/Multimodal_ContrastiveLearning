@@ -133,7 +133,6 @@ if __name__ == "__main__":
     img_scheduler = get_linear_schedule_with_warmup(img_optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=total_steps)
     cel_fnc = nn.CrossEntropyLoss()
 
-    """
     #train 
     text_model.train()
     image_model.train()
@@ -178,7 +177,7 @@ if __name__ == "__main__":
 
     result_loss = pd.DataFrame(result_loss)
     result_loss.to_csv(path+'/loss.csv')
-    """
+
     
     image_model.load_state_dict(torch.load("./result/ensemble_each_linearch/models/image_10.pt"))
     text_model.load_state_dict(torch.load("./result/ensemble_each_linearch/models/text_10.pt"))
