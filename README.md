@@ -4,9 +4,6 @@
 ```
 pip install -r requirements.txt
 ```
-NOTE: 
-- you should probably download the data (https://dacon.io/competitions/official/235978/overview/description) 
-- Save the downloaded data to "datasets" folder
 
 ## Usage
 
